@@ -22,15 +22,6 @@ public class BookAppointmentStepDefination
         bookAppointment.verifyUserPresentOndashboard();
     }
 
-    @When("user click on Book appointment")
-    public void userClickOnBookAppointment()
-    {
-
-
-
-        bookAppointment.clickOnBookAppointmetForDoctor();
-
-    }
     @When("user click on consultation it will redirect to Look for a doctor screen")
     public void userClickOnConsultationItWillRedirectToLookForADoctorScreen()
     {
@@ -50,6 +41,11 @@ public class BookAppointmentStepDefination
         bookAppointment.selectDateForBookAppointment(18);
         bookAppointment.selectTimeForBookAppointment(10);
     }
+    @When("user click on Book appointment")
+    public void userClickOnBookAppointment()
+    {
+        bookAppointment.clickOnConsultation();
+    }
 
     @Then("user can see make payment window")
     public void userCanSeeMakePaymentWindow() {
@@ -62,4 +58,5 @@ public class BookAppointmentStepDefination
     @Then("user can pay and book appointment successfully")
     public void userCanPayAndBookAppointmentSuccessfully() {
     }
+
 }

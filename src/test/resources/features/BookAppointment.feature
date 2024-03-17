@@ -8,11 +8,6 @@ Feature:Book appointement
     And clicks the Signin button1
     Then the user should be redirected to the home page1
 
-  Scenario: Book an walkin appointment.
-    Given user present on dashboard
-    When user click on Book apppointment
-
-
   Scenario: Book an appointment(Inclinic) with a doctor
     Given user present on dashboard
     When user click on consultation it will redirect to Look for a doctor screen

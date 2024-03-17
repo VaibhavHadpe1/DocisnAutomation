@@ -1,6 +1,6 @@
 package docisnPOMClasses;
 
-import docisnStepDefinationsClasses.Background;
+
 import docisnUtilities.Utility;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -42,7 +42,6 @@ public class BookAppointment
     {
         loginPage.verifyUserPresentOnDashboard();
     }
-
     public void clickOnConsultation()
     {
         Utility.explicitlyWait(consultationOnDashboard,driver,2);
@@ -114,6 +113,7 @@ public class BookAppointment
             }
         }
     }
+
 
 
 }
